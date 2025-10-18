@@ -3,8 +3,8 @@ from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 import datetime
-from sensor_reader import read_sensor
-from cost_calc import calculate_energy_cost, calculate_mold_risk
+from backend.sensor_reader import read_sensor
+from backend.cost_calc import calculate_energy_cost, calculate_mold_risk
 
 app = Flask(__name__)
 CORS(app)
