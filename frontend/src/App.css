@@ -1,0 +1,128 @@
+/* App.css */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.dashboard, .alerts, .goals {
+  background-color: white;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard:hover, .alerts:hover, .goals:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard p, .alerts p, .goals p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #4f46e5;
+}
+
+
+.dashboard h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.8rem; 
+  color: #1a202c;
+}
+
+.filter-buttons-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.quick-view-section {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.main-reading-card {
+  flex: 2; 
+  min-width: 300px; 
+  background-color: #f7f9fc; 
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-reading-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.main-reading-card .value {
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #4f46e5;
+  margin-bottom: 5px;
+}
+
+.main-reading-card .unit, .main-reading-card .date {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.side-data-cards {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px; 
+}
+
+.side-card {
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.side-card .icon-placeholder {
+  font-size: 2rem;
+  color: #4f46e5;
+ 
+}
+
+.side-card .label {
+  font-size: 1em;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.side-card .value {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1a202c;
+}

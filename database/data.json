@@ -1,0 +1,24 @@
+{
+  "readings": {
+    "-Nq8P-exampleKey1": {
+      "temperature": 22.5,
+      "humidity": 45.2,
+      "timestamp": 1678886400000
+    },
+    "-Nq8P-exampleKey2": {
+      "temperature": 23.1,
+      "humidity": 46.0,
+      "timestamp": 1678887000000
+    },
+    "-Nq8P-exampleKey3": {
+      "temperature": 24.0,
+      "humidity": 47.5,
+      "timestamp": 1678887600000
+    },
+    "-Nq8P-exampleKey4": {
+      "temperature": 23.8,
+      "humidity": 47.1,
+      "timestamp": 1678888200000
+    }
+  }
+}
