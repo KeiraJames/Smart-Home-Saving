@@ -1,12 +1,20 @@
-import firebase_admin
 import os
+import json
+import firebase_admin
 from firebase_admin import credentials, db
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-fb_key = os.path.join(BASE_DIR, "firebase_key.json")
+fb_key_json = os.environ.get("FIREBASE_KEY")
+fb_key = json.loads(fb_key_json)
 
-cred = credentials.Certificate(fb_key) 
+cred = credentials.Certificate(fb_key)
+
+
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# fb_key = os.path.join(BASE_DIR, "firebase_key.json")
+
+# cred = credentials.Certificate(fb_key) 
 
 firebase_admin.initialize_app(cred, 
 {
