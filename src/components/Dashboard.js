@@ -1,8 +1,6 @@
 import React from 'react';
 
-// The Dashboard component accepts two functions as props from App.js:
-// 1. onLogout: To handle the click of the "Logout" button.
-// 2. onNavigate: To tell App.js to change the page when a card is clicked.
+
 const Dashboard = ({ onLogout, onNavigate }) => {
 
   // Since this is a static UI, we define placeholder values directly.
@@ -10,8 +8,7 @@ const Dashboard = ({ onLogout, onNavigate }) => {
   const displayTemp = '72°F';
   const displayHumidity = '45%';
 
-  // --- Render Logic ---
-  // This component renders its UI directly without any loading or error states.
+  
 
   return (
     <div className="dashboard-shell">
