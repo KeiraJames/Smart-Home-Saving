@@ -33,13 +33,13 @@ body, html, #root {
 
 /* --- Login Background Layer (Bottom) --- */
 .app-container::before {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../../images/landing-page.jpeg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../images/landing-page.jpeg');
   z-index: 1;
 }
 
 /* --- Dashboard Background Layer (Top) --- */
 .app-container::after {
-  background-image: linear-gradient(to bottom, rgba(50, 42, 38, 0.4), rgba(28, 25, 23, 0.9)), url('../../images/dashboard.jpeg');
+  background-image: linear-gradient(to bottom, rgba(50, 42, 38, 0.4), rgba(28, 25, 23, 0.9)), url('../images/dashboard.jpeg');
   opacity: 0;
   z-index: 2;
 }
